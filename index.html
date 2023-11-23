@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip_Functions_Sandbox</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <script>
+        function showMessage(){
+            console.log("Hello, World");
+        }
+        showMessage();
+        showMessage();
+        showMessage();
+        showMessage();
+
+        //Arguments
+        function sumar(a, b) {
+           var suma = a + b;
+           console.log("El resultado de " + a + " " + "+" + " " + b + " es: " + suma);
+        }
+
+        var x = 5;
+        var y = 3;
+
+        sumar(x, y);
+
+        // sumar(5, 3);
+        // sumar(8, 9);
+        // sumar(2, 4);
+        // sumar(5, 5);
+
+        function concatenarTresCadenas (cadena1, cadena2, cadena3){
+            console.log(cadena1 + " " + cadena2 + " " + cadena3);
+
+        }
+
+        concatenarTresCadenas("I am", "learning", "to programming");
+
+        //Global Variables
+
+        var myGlobalVariable = 5;
+        console.log(myGlobalVariable);
+
+        function myFunction(){
+            console.log(myGlobalVariable);
+        } 
+
+        myFunction();
+
+        console.log(myGlobalVariable);
+
+        //Local Variables
+        function myFunction1(){
+            var myLocalVariable = 4;
+            console.log(myLocalVariable);
+        }
+
+        myFunction1();
+
+        console.log(myLocalVariable);
+
+        //Global vs Local Variable
+        var miNombre = "Nora";
+
+       function mostrarMiNombre(){
+            var miNombre = "Gino";
+            console.log(miNombre);
+       }
+       mostrarMiNombre();
+
+       console.log(miNombre);
+
+       //return a Value:
+       function sum(a, b){
+        return a + b;
+       }
+
+       console.log(sum(5, 3));
+
+
+
+
+
+    </script>    
+
+
+</body>
+</html>
